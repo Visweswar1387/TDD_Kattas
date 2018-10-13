@@ -5,6 +5,6 @@ public class EncodeString {
         if(inputString.length()>0) {
             return "Length Greater than zero";
         }
-        return "";
+        return "Input string length must should be greater than 0";
     }
 }
