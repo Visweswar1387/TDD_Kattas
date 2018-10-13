@@ -28,4 +28,9 @@ public class TestEncodeString {
         Assert.assertEquals(3,characterFrequency.findCharacterFrequency('a',"aaab"));
         Assert.assertEquals(1, characterFrequency.findCharacterFrequency('a',"a"));
     }
+
+    @Test
+    public void shouldTestEncodeString() {
+        Assert.assertEquals("a1b", encodeString.encode("aab"));
+    }
 }
