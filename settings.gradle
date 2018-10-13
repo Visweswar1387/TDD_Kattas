@@ -8,3 +8,5 @@
  */
 
 rootProject.name = 'TDD_Kattas'
+include 'EncodeAndDecode'
+
