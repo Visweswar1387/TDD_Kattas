@@ -7,6 +7,8 @@ public class TestDecodeString {
 
     @Test
     public void shouldTestDecodeStringLengthGreaterThanZero() {
-        Assert.assertEquals("Decode String length must greater than zero", decodeString.decode());
+
+        DecodeString decodeString = new DecodeString();
+        Assert.assertEquals("2", decodeString.decode("a1"));
     }
 }
