@@ -17,4 +17,9 @@ public class TestDecodeString {
     public void shouldTestDecodeStringLengthGreaterThanZero() {
         Assert.assertEquals("2", decodeString.decode("a1"));
     }
+
+    @Test
+    public void shouldTestDecodeStringLengthLessThanZero() {
+        Assert.assertEquals("Input string length must should be greater than 0", decodeString.decode(""));
+    }
 }
