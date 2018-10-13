@@ -32,5 +32,6 @@ public class TestEncodeString {
     @Test
     public void shouldTestEncodeString() {
         Assert.assertEquals("a2b1", encodeString.encode("aab"));
+        Assert.assertEquals("a1b1c1",encodeString.encode("abc"));
     }
 }
