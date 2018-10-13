@@ -21,4 +21,10 @@ public class TestEncodeString {
     public void ShouldTestInputStringLengthLessThanZero() {
         Assert.assertEquals("Input string length must should be greater than 0",encodeString.encode(""));
     }
+
+    @Test
+    public void ShouldTestConsecutiveCharacterFrequency() {
+        ConsectiveCharacterFrequency characterFrequency = new ConsectiveCharacterFrequency();
+        Assert.assertEquals(3,characterFrequency.findCharacterFrequency("a","aaab"));
+    }
 }
