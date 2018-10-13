@@ -14,7 +14,7 @@ public class TestEncodeString {
 
     @Test
     public void ShouldTestInputStringLengthGreaterThanZero() {
-        Assert.assertEquals("Length Greater than zero",encodeString.encode("aa"));
+        Assert.assertEquals("a2",encodeString.encode("aa"));
     }
 
     @Test

@@ -12,7 +12,7 @@ public class EncodeString {
             ConsecutiveCharacterFrequency characterFrequency = new ConsecutiveCharacterFrequency();
             for(int i=0; i<inputString.length();) {
                 character=inputString.charAt(i);
-                frequency= characterFrequency.findCharacterFrequency(character,inputString.substring(i+1));
+                frequency= characterFrequency.findCharacterFrequency(character,inputString.substring(i+1))+1;
                 encodeString=encodeString+character+frequency;
                 i=i+frequency;
             }
