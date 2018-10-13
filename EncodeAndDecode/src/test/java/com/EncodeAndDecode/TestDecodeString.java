@@ -27,5 +27,7 @@ public class TestDecodeString {
     public void shouldTestConversionFromCharacterFrequencyToString() {
         ConversionCharacterFrequencyToString conversionCharacterFrequencyToString = new ConversionCharacterFrequencyToString();
         Assert.assertEquals("aa", conversionCharacterFrequencyToString.characterFrequencyToString("a2"));
+        Assert.assertEquals("bbbbb", conversionCharacterFrequencyToString.characterFrequencyToString("b5"));
+
     }
 }
