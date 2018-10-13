@@ -33,5 +33,8 @@ public class TestEncodeString {
     public void shouldTestEncodeString() {
         Assert.assertEquals("a2b1", encodeString.encode("aab"));
         Assert.assertEquals("a1b1c1",encodeString.encode("abc"));
+        Assert.assertEquals("a1b2c3d4s1",encodeString.encode("abbcccdddds"));
+        Assert.assertEquals("a1",encodeString.encode("a"));
+        Assert.assertEquals("d3",encodeString.encode("ddd"));
     }
 }
