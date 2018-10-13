@@ -2,15 +2,16 @@ package com.EncodeAndDecode;
 
 public class EncodeString {
 
+    private final int ZERO=0;
     public String encode(String inputString) {
 
         int frequency;
         char character;
         String encodeString="";
 
-        if(inputString.length()>0) {
+        if(inputString.length()>ZERO) {
             ConsecutiveCharacterFrequency characterFrequency = new ConsecutiveCharacterFrequency();
-            for(int i=0; i<inputString.length();) {
+            for(int i=ZERO; i<inputString.length();) {
                 character=inputString.charAt(i);
                 frequency= characterFrequency.findCharacterFrequency(character,inputString.substring(i+1))+1;
                 encodeString=encodeString+character+frequency;
