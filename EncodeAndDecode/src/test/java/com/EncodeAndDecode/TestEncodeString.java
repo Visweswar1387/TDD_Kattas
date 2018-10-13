@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class TestEncodeString {
 
-    EncodeString encodeString;
+    private EncodeString encodeString;
     @Before
     public void initialise() {
         encodeString = new EncodeString();
