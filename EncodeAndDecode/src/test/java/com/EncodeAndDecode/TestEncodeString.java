@@ -24,7 +24,7 @@ public class TestEncodeString {
 
     @Test
     public void ShouldTestConsecutiveCharacterFrequency() {
-        ConsectiveCharacterFrequency characterFrequency = new ConsectiveCharacterFrequency();
-        Assert.assertEquals(3,characterFrequency.findCharacterFrequency("a","aaab"));
+        ConsecutiveCharacterFrequency characterFrequency = new ConsecutiveCharacterFrequency();
+        Assert.assertEquals(3,characterFrequency.findCharacterFrequency('a',"aaab"));
     }
 }
