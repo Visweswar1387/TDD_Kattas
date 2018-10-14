@@ -15,7 +15,7 @@ public class TestDecodeString {
 
     @Test
     public void shouldTestDecodeStringLengthGreaterThanZero() {
-        Assert.assertEquals("2", decodeString.decode("a1"));
+        Assert.assertEquals("aa", decodeString.decode("a2"));
     }
 
     @Test
@@ -33,6 +33,6 @@ public class TestDecodeString {
 
     @Test
     public void shouldTetDecodeString() {
-        Assert.assertEquals("aab",decodeString.decode("a2b"));
+        Assert.assertEquals("aab",decodeString.decode("a2b1"));
     }
 }
