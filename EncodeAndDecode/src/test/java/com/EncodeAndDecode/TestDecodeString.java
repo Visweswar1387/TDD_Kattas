@@ -34,5 +34,7 @@ public class TestDecodeString {
     @Test
     public void shouldTetDecodeString() {
         Assert.assertEquals("aab",decodeString.decode("a2b1"));
+        Assert.assertEquals("a",decodeString.decode("a1"));
+        Assert.assertEquals("aaaabbbbbcccde",decodeString.decode("a4b5c3d1e1"));
     }
 }
