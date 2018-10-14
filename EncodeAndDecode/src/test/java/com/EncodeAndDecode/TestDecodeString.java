@@ -30,4 +30,9 @@ public class TestDecodeString {
         Assert.assertEquals("bbbbb", conversionCharacterFrequencyToString.characterFrequencyToString("b5"));
 
     }
+
+    @Test
+    public void shouldTetDecodeString() {
+        Assert.assertEquals("aab",decodeString.decode("a2b"));
+    }
 }
