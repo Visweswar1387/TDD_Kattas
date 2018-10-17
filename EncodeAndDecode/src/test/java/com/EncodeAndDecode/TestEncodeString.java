@@ -13,17 +13,17 @@ public class TestEncodeString {
     }
 
     @Test
-    public void ShouldTestInputStringLengthGreaterThanZero() {
+    public void shouldTestInputStringLengthGreaterThanZero() {
         Assert.assertEquals("a2",encodeString.encode("aa"));
     }
 
     @Test
-    public void ShouldTestInputStringLengthLessThanZero() {
+    public void shouldTestInputStringLengthLessThanZero() {
         Assert.assertEquals("Input string length must should be greater than 0",encodeString.encode(""));
     }
 
     @Test
-    public void ShouldTestConsecutiveCharacterFrequency() {
+    public void shouldTestConsecutiveCharacterFrequency() {
         ConsecutiveCharacterFrequency characterFrequency = new ConsecutiveCharacterFrequency();
         Assert.assertEquals(3,characterFrequency.findCharacterFrequency('a',"aaab"));
         Assert.assertEquals(1, characterFrequency.findCharacterFrequency('a',"a"));
