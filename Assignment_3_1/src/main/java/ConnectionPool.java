@@ -13,8 +13,8 @@ public class ConnectionPool {
     private static int usedConnections =0;
     private static final int ZERO=0;
 
-    //Connection[] connectionPool = new Connection[MAX_POOL_SIZE];
     static ArrayList<Connection> connectionPool = new ArrayList<Connection>();
+    static ArrayList<Connection> usedPoolOfConnections = new ArrayList<Connection>();
     private static Connection connection;
 
     private ConnectionPool() {}
@@ -24,6 +24,7 @@ public class ConnectionPool {
             try {
                 connection = DriverManager.getConnection(dbUrl, user, password);
                 connectionPool.add(connection);
+                usedPoolOfConnections.add(connection);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
@@ -46,6 +47,12 @@ public class ConnectionPool {
 
     private static boolean checkAvailableConnection() {
         return usedConnections<MAX_POOL_SIZE;
+    }
+
+    private static void closeAllUsedConnections() {
+        for(int i=ZERO;i<usedPoolOfConnections.size();i++) {
+            usedPoolOfConnections.remove(i);
+        }
     }
 
 
