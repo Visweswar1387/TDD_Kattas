@@ -11,4 +11,5 @@ rootProject.name = 'TDD_Kattas'
 include 'EncodeAndDecode'
 include 'Assignment_3_2'
 include 'Assignment_3_1'
+include 'ProducerConsumer'
 
