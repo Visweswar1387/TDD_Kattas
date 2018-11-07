@@ -81,11 +81,8 @@ public class Main {
         consumer5.start();
 
         producer.join();
-        consumer1.join();
-        consumer2.join();
-        consumer3.join();
-        consumer4.join();
-        consumer5.join();
+
+
     }
 
 }
